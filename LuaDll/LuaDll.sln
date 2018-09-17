@@ -5,6 +5,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LuaDll", "LuaDll\LuaDll.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestLua", "TestLua\TestLua.vcxproj", "{C1D94FD9-9A46-486A-A0CD-FFA3E9D520E9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DllPlusPlus", "DllPlusPlus\DllPlusPlus.vcxproj", "{A127A6C5-6A70-4BFA-BFBA-04298D4D8ADA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -39,6 +41,17 @@ Global
 		{C1D94FD9-9A46-486A-A0CD-FFA3E9D520E9}.Release|Win32.Build.0 = Release|Win32
 		{C1D94FD9-9A46-486A-A0CD-FFA3E9D520E9}.Release|x64.ActiveCfg = Release|x64
 		{C1D94FD9-9A46-486A-A0CD-FFA3E9D520E9}.Release|x64.Build.0 = Release|x64
+		{A127A6C5-6A70-4BFA-BFBA-04298D4D8ADA}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{A127A6C5-6A70-4BFA-BFBA-04298D4D8ADA}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{A127A6C5-6A70-4BFA-BFBA-04298D4D8ADA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A127A6C5-6A70-4BFA-BFBA-04298D4D8ADA}.Debug|Win32.Build.0 = Debug|Win32
+		{A127A6C5-6A70-4BFA-BFBA-04298D4D8ADA}.Debug|x64.ActiveCfg = Debug|Win32
+		{A127A6C5-6A70-4BFA-BFBA-04298D4D8ADA}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{A127A6C5-6A70-4BFA-BFBA-04298D4D8ADA}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{A127A6C5-6A70-4BFA-BFBA-04298D4D8ADA}.Release|Win32.ActiveCfg = Release|Win32
+		{A127A6C5-6A70-4BFA-BFBA-04298D4D8ADA}.Release|Win32.Build.0 = Release|Win32
+		{A127A6C5-6A70-4BFA-BFBA-04298D4D8ADA}.Release|x64.ActiveCfg = Release|x64
+		{A127A6C5-6A70-4BFA-BFBA-04298D4D8ADA}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

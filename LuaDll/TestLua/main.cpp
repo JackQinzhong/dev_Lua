@@ -3,16 +3,40 @@
 
 #include <stdio.h>
 
+//很重要，不然函数没有导出
+#define LUA_BUILD_AS_DLL
+#define LUA_COMPAT_MODULE
+
+
 extern "C"
 {
 #include <lua.h>
 #include <lualib.h>
 #include <lauxlib.h>
-
 }
 
 #pragma comment (lib,"LuaDll.lib")
 
+
+int FUN (lua_State*L)
+{
+	int a = lua_tointeger(L,1);
+	int b = lua_tointeger(L,2);
+
+	lua_pushinteger(L,a+b);
+
+	//1：表示压入站数据个数
+	return 1;
+}
+luaL_Reg funcs [] = 
+{
+	{"test1",FUN},
+	{"test2",FUN},
+	{"test3",FUN},
+	{"test4",FUN},
+	{"test5",FUN},
+	{0,0},
+};
 void printTable(lua_State * pState ,int index)
 {
 
@@ -65,6 +89,17 @@ int main (int argc,char** argv)
 	luaopen_table(L);
 	luaopen_string(L);
 	luaopen_math(L);
+
+	
+	//方法1，不常用，一次只注册一个函数
+	lua_register(L,"Fun",FUN);
+
+	luaL_dostring(L,"Fun(111,333)");
+
+	//方法2 注册多个函数
+	luaL_openlib(L,"mylib",funcs,0);
+
+	
 
 	stackDump(L);
 
